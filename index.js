@@ -13,8 +13,8 @@ var Trades = mongoose.model('socketTrades', TradesSchema);
 var ws = function(api_key, api_secret) {
 var WebSocket = require('ws');
 var ws = new WebSocket("wss://api2.bitfinex.com:3000/ws");
-   ws.api_key = '7kGrX7bMkwKB16fzwHqKYMySuDAhah0OgUqTv0GvCmW';
-   ws.api_secret = 'bfopPuyyNO56fSK9MB3wICgzM0MybrpsODZHseNL0yo';
+   ws.api_key = 'KEY';
+   ws.api_secret = 'SECRET';
    ws.on('open', function open() {
       ws.send(JSON.stringify({
          "event": "subscribe",
