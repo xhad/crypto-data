@@ -1,5 +1,4 @@
 'use strict';
-var clc = require('cli-color');
 var mongoose = require('mongoose');
 var db = mongoose.connect('mongodb://localhost:27017/bitfinex_usd');
 var Schema = mongoose.Schema;
@@ -36,11 +35,12 @@ var ws = function(api_key, api_secret) {
             amount: +amount
         });
 
-        if (timestamp)
+        if (timestamp) {
           latest.save(function(err) {
             if (err) throw err;
             console.log("saved");
         });
+      }
     })
 };
 ws();
