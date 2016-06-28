@@ -1,20 +1,17 @@
 {
   "name": "websocket",
   "version": "1.0.0",
-  "description": "",
+  "description": "Crypto currency data scraper",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "angular": "latest",
     "bitfinex-api-node": "^0.1.18",
-    "e": "0.0.4",
-    "express": "latest",
-    "mongoose": "~4.2.4",
-    "websocket": "latest",
-    "cli-color": "~1.1.0"
+    "express": "^4.14.0",
+    "mongoose": "^4.5.2",
+    "ws": "^1.1.1"
   }
 }
