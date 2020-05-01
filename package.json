@@ -4,7 +4,9 @@
   "description": "Crypto currency data scraper",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "MIT",
@@ -12,6 +14,8 @@
     "bitfinex-api-node": "^0.1.18",
     "express": "^4.14.0",
     "mongoose": "^4.5.2",
-    "ws": "^1.1.1"
-  }
+    "ws": "^1.1.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
