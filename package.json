@@ -11,7 +11,7 @@
   "dependencies": {
     "bitfinex-api-node": "^0.1.18",
     "express": "^4.14.0",
-    "mongoose": "^4.5.2",
+    "mongoose": "^5.11.7",
     "ws": "^1.1.1"
   }
 }
